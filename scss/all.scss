@@ -1,0 +1,226 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+//all.css
+
+body{
+    // font-size: 15px;
+    padding-top: 150px;
+    font-family: Lexend Deca;
+    
+}
+
+
+.container{
+    // border: solid 2px black;
+    margin: 0 auto;
+    // background-color: grey;
+    max-width: 921px;
+    display: flex;
+    margin-bottom: 50px;
+   
+}
+
+ .section-1{
+        
+        background-color: hsl(31, 77%, 52%);
+        padding-top: 48px;
+        padding-left: 46px;
+        padding-right: 5px;
+        border-top-left-radius: 0.5em;
+        border-bottom-left-radius:0.5em;
+        img{
+            margin-bottom: 41px;
+        }
+        h2{
+            font-family: Big Shoulders Display;
+            font-size: 2em;
+            margin-bottom: 41px;
+            color: hsl(0, 0%, 95%);
+        }
+        p{
+            line-height: 1.5em;
+            margin-bottom: 85px;
+            margin-right: 45px;
+            color: hsla(0, 0%, 100%, 0.75);
+        }
+        button{
+            border-radius: 2em;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 25px;
+            padding-left: 25px;
+            margin-bottom: 47px;
+            border: none;
+            color: hsl(31, 77%, 52%);
+            font-family: Lexend Deca;
+            &:hover { 
+                // cursor: pointer;
+                background: hsl(31, 77%, 52%);
+                color: hsl(0, 0%, 95%);
+                border:solid 1px white;
+            }
+        
+        }
+        
+    }
+.section-2{
+      
+        background-color:  hsl(184, 100%, 22%);
+        padding-top: 48px;
+        padding-left: 46px;
+        padding-right: 5px;
+        img{
+            margin-bottom: 41px;
+        }
+        h2{
+            font-family: Big Shoulders Display;
+            font-size: 2em;
+            margin-bottom: 41px;
+            color: hsl(0, 0%, 95%);
+        }
+        p{
+            line-height: 1.5em;
+            margin-bottom: 85px;
+            margin-right: 45px;
+            color: hsla(0, 0%, 100%, 0.75);
+        }
+        button{
+            border-radius: 2em;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 25px;
+            padding-left: 25px;
+            margin-bottom: 47px;
+            border: none;
+            color: hsl(184, 100%, 22%);
+            font-family: Lexend Deca;
+            &:hover { 
+                // cursor: pointer;
+                background: hsl(184, 100%, 22%);
+                color: hsl(0, 0%, 95%);
+                border:solid 1px white;
+            }
+        
+        }
+    }  
+.section-3{
+       
+        background-color: hsl(179, 100%, 13%);
+        padding-top: 48px;
+        padding-left: 46px;
+        padding-right: 5px;
+        border-top-right-radius: 0.5em;
+        border-bottom-right-radius: 0.5em;
+        img{
+            margin-bottom: 41px;
+        }
+        h2{
+            font-family: Big Shoulders Display;
+            font-size: 2em;
+            margin-bottom: 41px;
+            color: hsl(0, 0%, 95%);
+        }
+        p{
+            line-height: 1.5em;
+            margin-bottom: 85px;
+            margin-right: 45px;
+            color: hsla(0, 0%, 100%, 0.75);
+        }
+        button{
+            border-radius: 2em;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 25px;
+            padding-left: 25px;
+            margin-bottom: 47px;
+            border: none;
+            color: hsl(179, 100%, 13%);
+            font-family: Lexend Deca;
+            &:hover { 
+                // cursor: pointer;
+                background: hsl(179, 100%, 13%);
+                color: hsl(0, 0%, 95%);
+                border:solid 1px white;
+            }
+        
+        }
+    }
+        //mobile 375px
+        @media screen and (max-width: 376px){
+            body{
+                padding-top: 0;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            .container{
+                display: inline-block;
+            }
+            .section-1{
+                border-top-left-radius: 0.5em;
+                border-top-right-radius: 0.5em;
+                border-bottom-left-radius: 0;
+            }
+            .section-3{
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0.5em;
+                border-bottom-left-radius:0.5em;
+            }
+
+        }
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    a { 
+        color: hsl(228, 45%, 44%);
+     }
+}
+
